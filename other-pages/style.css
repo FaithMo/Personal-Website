@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+  /* display: grid; */
+  background: black;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+  /* z-index: 1; */
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 36px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: transparent;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: rgb(23, 24, 23);
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    height: 1px;
+  }
+}
+
+/* ------------------------------------------about---------------------------------------------------- */
+
+.container {
+  border: 1px rgb(129, 122, 122) solid;
+  border-radius: 20px;
+  padding: 6%;
+  height: 40%;
+  width: 65%;
+  display: flex;
+  color: rgb(212, 182, 162);
+  /* width: 100px;  */
+  left: 50%;
+  top: 25%;
+  -webkit-transform: translate(-50%, 0);
+  position: absolute; 
+  display: flex;
+  justify-content: center;
+}
+
+.container p {
+    font-size: 1.3vw;
+    text-align: left;
+    /* right: 60px; */
+}
+
+#profile-pic {
+    top: 50%;
+}
+
+#btn {
+    border: 3px pink solid;
+    background: transparent;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 30px;
+    /* margin-left: 750px;
+    position: relative; */
+    display: flex;
+    justify-content: center;
+  }
+
+/* make btn responsive */
+
+/* ===================================SKILLS================================*/
+
+#skills-container {
+  background: rgb(107, 105, 105);
+  border: 1px rgb(129, 122, 122) solid;
+  border-radius: 20px;
+  padding: 6%;
+  height: 50%;
+  width: 80%;
+  display: flex;
+  color: rgb(212, 182, 162);
+  /* width: 100px;  */
+  left: 50%;
+  top: 15%;
+  -webkit-transform: translate(-50%, 0);
+  position: absolute; 
+  display: flex;
+  justify-content: center;
+}
+
+#skills-container h3{
+  font-size: 150%;
+}
+
+
+#skills-img {
+  width: 100px;
+  height: 100px; 
+  /* make images responsive */
+}
+
+#portfolio-container {
+  background: rgb(28, 28, 32);
+  /* border: 1px rgb(129, 122, 122) solid; */
+  border-radius: 20px;
+  padding: 6%;
+  height: 50%;
+  width: 80%;
+  display: flex;
+  color: rgb(212, 182, 162);
+  /* width: 100px;  */
+  left: 50%;
+  top: 15%;
+  -webkit-transform: translate(-50%, 0);
+  position: absolute; 
+  display: flex;
+  justify-content: center;
+}
+
+
+

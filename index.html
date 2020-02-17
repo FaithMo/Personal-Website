@@ -1,133 +1,32 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <title>Faith-Portfolio</title>
-    <meta charset="utf-8" />  <!--  not responsive! -->
-	  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" ></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    <title>Faith's personal website</title>
 </head>
-  <body>
-    <h1 class="myname" >FAITH<br> MOFOKENG</h1>
-    <h2>Web Developer and Programmer</h2>
-    <img src="IMG-20190715-WA0008.jpg" alt="profile picture">
-    
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="other-pages/about.html">About</a>
+        <a href="other-pages/skills.html">Skills</a>
+        <a href="other-pages/portfolio.html">Portfolio</a> 
+        <a href="other-pages/contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars" style="color: white" >☰</i>
+        </a>
+      </div>
+      <section id="home">
+        <div class="hello">
+            <h1 style="font-size:6vw; color: blanchedalmond;">Faith Mofokeng</h1> 
+          </div>
+          <div class="world">
+            <p style="font-size:3vw; color: blanchedalmond;">Junior Web Developer</p>  
+          </div>
+      </section>
 
-    <h3 class="typewriter" >"Happiness  should  be  a  function  without  any  parameters."  -  Pronshu  Midha</h3>
-
-    <div class="tab">
-      <button class="panel" class="tablinks" onclick="openTab(event, 'About')">About Me</button>
-      <button class="panel" class="tablinks" onclick="openTab(event, 'Portfolio')">Portfolio</button>
-      <button class="panel" class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
-    </div>
-
-    <div id="About" class="tabcontent">
-      <h3>ABOUT ME</h3>
-      <p>
-        Hey, my name is Faith Mofokeng. I am a web developer<br>
-        and a programmer aspiring to get into digital and cyber<br>
-        security.<br>
-        <br>
-        I still look both ways when I cross a one way road.<br>
-        This has come to prove my meticulousness in everything I do,<br>
-        whether personal or professional.<br>
-        <br>
-        I work better with music and I am great fan of basketball.<br>
-        <br>
-        <br>
-        <br>
-        <b>EDUCATION</b><br>
-        <br>
-        UMUZI ACADEMY (current)
-        <br>
-        Certificate In Information (System Development)<br>
-        <br>
-        UNIVERSITY OF SOUTH AFRICA (current)<br>
-        General Bachelor of Science mjr. Chemistry. <br>
-        <br>
-        <br>
-        <br>
-        <b>PERSONAL SKILLS</b> <br>
-        <ul>
-          <li>Good Communication Skills</li>
-          <li>Time management</li>
-          <li>Creative</li>
-          <li>Team Leadership</li>
-        </ul>
-        <br>
-        <br>
-        <br>
-        <b>MY SKILLS</b>
-        <br>
-        <div class="skillsImages" >
-           <a href="https://www.hongkiat.com/blog/cool-useful-html-tags/"><img src="html-5.png" 
-            title="Cool HTML tags" alt="html5"></a>
-           <a href="https://css-tricks.com/hearts-in-html-and-css/"><img id="move1" src="css3-logo.png" 
-            title="CSS tricks" alt="css3"></a>
-           <a href="https://cppinstitute.org/why-cpp-is-a-good-choice"><img id="move2" src="cppPic.png" 
-            title="why cpp is a good choice" alt="c++"></a>
-           <a href="https://hackernoon.com/cool-shits-javascript-can-do-9da42346e399"><img id="move3" 
-            title="Cool things about javascript" src="jsPic.png" alt="javascript"></a>
-        </div> 
-        <center> ______________________________________________________________________________________________________________<br>
-        Email: faithmofokeng5@gmail.com Phone: +27 (0)81 3580 6026<br> <br> GitHub: </center> <a href="https://github.com/FaithMo">
-          <img class="linkImage" src="githubIcon.png" title="Github Page" alt="Git" ></a>
-      </p>
-    </div>
-        
-    <div id="Portfolio" class="tabcontent">
-      <h3>Here is my work</h3>
-      <p><b>Human Centered Design</b> 
-        <br>
-        <br>
-        This is an approach to interactive systems development that aims to make systems<br> usable and 
-        useful by focusing on the users, their needs and requirements , and by applying<br> 
-        human factors/ergonomics,usability knowledge and technology. 
-        - <a href="http://en.m.wikipedia.org/wiki/Human-centered_design">Wikipedia</a>
-        <br>
-        <br>
-        <b>The Bravos! explain more.</b> <br>
-        <br>
-        <i>Click on this image for a full presentation.</i> <br>
-        <br>
-        <br>
-        <a href="TheBravos.pdf"> <img id="user" src="userJourney.png" alt="An example of design thinking." 
-          style="border-radius: 0px;" > </a> 
-      </p> 
-      <p id="contact"> ______________________________________________________________________________________________________________<br>
-        Email: faithmofokeng5@gmail.com Phone: +27 (0)81 3580 6026<br> GitHub: 
-        <a href="https://github.com/FaithMo">
-        <img class="linkImage" src="githubIcon.png" title="Github Page" alt="Git" ></a> 
-      </p>
-    </div>
-        
-    <div id="Contact" class="tabcontent">
-      <h3>Let's connect. Here is where to find me.</h3>
-      <div class="container">
-          <form action= contactPage.html>
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        
-            <label for="lemail">Email</label>
-            <input type="text" id="lemail" name="email" placeholder="Your email..">
-        
-            <label for="subject">Message</label>
-            <textarea id="subject" name="subject" placeholder="Talk to me.." style="height:150px"></textarea>
-        
-            <input type="submit" value="Submit">
-          </form>
-        </div>
-
-        <p id="contact"> ______________________________________________________________________________________________________________<br>
-          Email: faithmofokeng5@gmail.com Phone: +27 (0)81 3580 6026 <br> GitHub: 
-          <a href="https://github.com/FaithMo">
-            <img class="linkImage" src="githubIcon.png" title="Github Page" alt="Git"></a>
-          </p>
-
-    </div>
-    
 </body>
 </html>
