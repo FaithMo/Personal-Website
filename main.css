@@ -7,14 +7,32 @@ html{
     background-image: url("./images/sparkles-portfolio.gif");
 }
 
+.bar{
+    background-color: #333333;
+}
+
 .home{
     /*height: 100vh;*/
     /*background-colgit addor: green;*/
+}
+
+.button{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    /*width: 10%;*/
 }
 
 .about{
     background-image: url("./images/background-brick-close-up-1585710.jpg");
     border-radius: 20px;
     /*height: 70vh;*/
-
 }
+
+.skills {
+    border: 2px solid white;
+    border-radius: 20px;
+    height: 50vh;
+}
+
